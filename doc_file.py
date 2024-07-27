@@ -1,4 +1,5 @@
 ﻿# coding=UTF-8-BOM
+
 # Copyright 2024 © Mike. All Rights Reserved.
 help_text = '''--- HELP DOCUMENT START ---
 114514 | 立即开始恶臭

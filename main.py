@@ -1,8 +1,6 @@
 ﻿# coding=UTF-8-BOM
 import json
 import doc_file as doc
-from pickle import TRUE
-import sys
 import threading
 import requests as rq
 from requests import RequestException
