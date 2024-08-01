@@ -12,7 +12,6 @@ import os
 import process_file as pf
 
 print("hello? World!")
-print("Copyright 2024 © Mike. All Rights Reserved.")
 
 def dev_time_limit(time_limit): # 开发版本时间限制
     if int(time.time()) - time_limit > 0:
