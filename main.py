@@ -1,4 +1,4 @@
-﻿# coding=UTF-8-BOM
+# coding=UTF-8
 import json
 import doc_file as doc
 import threading

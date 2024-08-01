@@ -1,38 +1,38 @@
-# coding=UTF-8-BOM
+# coding=UTF-8
 
-# ´ËÄ£¿éÓÃÓÚ´¦ÀíÏûÏ¢ÊÂ¼ş
-# ÊÕµ½ÏûÏ¢½«»á´ÓÖ÷³ÌĞòµ÷ÓÃ
-# Ä£¿éÖĞµÄº¯Êı´¦Àí»á×èÈûÖ÷Ïß³Ì£¬ÇëÎğµÈ´ı£¡
+# æ­¤æ¨¡å—ç”¨äºå¤„ç†æ¶ˆæ¯äº‹ä»¶
+# æ”¶åˆ°æ¶ˆæ¯å°†ä¼šä»ä¸»ç¨‹åºè°ƒç”¨
+# æ¨¡å—ä¸­çš„å‡½æ•°å¤„ç†ä¼šé˜»å¡ä¸»çº¿ç¨‹ï¼Œè¯·å‹¿ç­‰å¾…ï¼
 
-# È«¾ÖÏûÏ¢¶îÍâ´¦Àíº¯Êı
+# å…¨å±€æ¶ˆæ¯é¢å¤–å¤„ç†å‡½æ•°
 def global_message(original_data:dict):
-    # ËùÓĞÏûÏ¢¶¼»á´¥·¢´Ëº¯Êıµ÷ÓÃ
-    # original_data µ÷ÓÃ·µ»ØµÄÏûÏ¢jsonÖĞµÄ["data"]×ª³ÉµÄdict
-    # ÏêÏ¸Çë²Î¼û https://open.fanbook.mobi/document/manage/doc/#%E9%A2%91%E9%81%93%E6%B6%88%E6%81%AF%E5%88%97%E8%A1%A8
+    # æ‰€æœ‰æ¶ˆæ¯éƒ½ä¼šè§¦å‘æ­¤å‡½æ•°è°ƒç”¨
+    # original_data è°ƒç”¨è¿”å›çš„æ¶ˆæ¯jsonä¸­çš„["data"]è½¬æˆçš„dict
+    # è¯¦ç»†è¯·å‚è§ https://open.fanbook.mobi/document/manage/doc/#%E9%A2%91%E9%81%93%E6%B6%88%E6%81%AF%E5%88%97%E8%A1%A8
     pass
 
-# ÎÄ±¾ÏûÏ¢¶îÍâ´¦Àíº¯Êı
+# æ–‡æœ¬æ¶ˆæ¯é¢å¤–å¤„ç†å‡½æ•°
 def text_message(message_id:str,message_sender_id:str,message_sender_nick:str,message_text_ori:str,message_text_format:str):
-    # message_id ÏûÏ¢Î¨Ò»³¤ID
-    # message_sender_id ·¢ËÍÕßÎ¨Ò»¶ÌID
-    # message_sender_nick ·¢ËÍÕßÍâÏÔÃû
-    # message_text_ori ÏûÏ¢Ô­ÎÄ£¬@ºÍ#Î´×ªÒå
-    # message_text_format ×ªÒå@ºÍ#ºóµÄÏûÏ¢
+    # message_id æ¶ˆæ¯å”¯ä¸€é•¿ID
+    # message_sender_id å‘é€è€…å”¯ä¸€çŸ­ID
+    # message_sender_nick å‘é€è€…å¤–æ˜¾å
+    # message_text_ori æ¶ˆæ¯åŸæ–‡ï¼Œ@å’Œ#æœªè½¬ä¹‰
+    # message_text_format è½¬ä¹‰@å’Œ#åçš„æ¶ˆæ¯
     pass
 
-# Í¼Æ¬ÏûÏ¢¶îÍâ´¦Àíº¯Êı
+# å›¾ç‰‡æ¶ˆæ¯é¢å¤–å¤„ç†å‡½æ•°
 def pic_message(message_id:str,message_sender_id:str,message_sender_nick:str,pic_url:str):
-    # message_id ÏûÏ¢Î¨Ò»³¤ID
-    # message_sender_id ·¢ËÍÕßÎ¨Ò»¶ÌID
-    # message_sender_nick ·¢ËÍÕßÍâÏÔÃû
-    # pic_url Í¼Æ¬À­È¡µØÖ·
+    # message_id æ¶ˆæ¯å”¯ä¸€é•¿ID
+    # message_sender_id å‘é€è€…å”¯ä¸€çŸ­ID
+    # message_sender_nick å‘é€è€…å¤–æ˜¾å
+    # pic_url å›¾ç‰‡æ‹‰å–åœ°å€
     pass
 
-# ÓïÒôÏûÏ¢¶îÍâ´¦Àíº¯Êı
+# è¯­éŸ³æ¶ˆæ¯é¢å¤–å¤„ç†å‡½æ•°
 def voi_message(message_id:str,message_sender_id:str,message_sender_nick:str,voi_url:str,voi_sec:int):
-    # message_id ÏûÏ¢Î¨Ò»³¤ID
-    # message_sender_id ·¢ËÍÕßÎ¨Ò»¶ÌID
-    # message_sender_nick ·¢ËÍÕßÍâÏÔÃû
-    # voi_url ÓïÒôÀ­È¡µØÖ·
-    # voi_sec ÓïÒôÃëÊı
+    # message_id æ¶ˆæ¯å”¯ä¸€é•¿ID
+    # message_sender_id å‘é€è€…å”¯ä¸€çŸ­ID
+    # message_sender_nick å‘é€è€…å¤–æ˜¾å
+    # voi_url è¯­éŸ³æ‹‰å–åœ°å€
+    # voi_sec è¯­éŸ³ç§’æ•°
     pass

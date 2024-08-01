@@ -1,4 +1,4 @@
-﻿# coding=UTF-8-BOM
+# coding=UTF-8
 
 # Copyright 2024 © Mike. All Rights Reserved.
 help_text = '''--- HELP DOCUMENT START ---
