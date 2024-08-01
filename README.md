@@ -25,3 +25,8 @@
 ## 协议
 
 本程序基于 GNU GPL 3.0 协议开源
+
+## 赞助
+
+![微信赞赏码](https://supportme.709000.xyz/mm_reward_qrcode_1707987997934.png)
+
