@@ -71,6 +71,7 @@ if data["ok"] != True:
 print("机器人id：",data["result"]["id"],sep="")
 print("机器人名字：",data["result"]["first_name"],sep="")
 print("机器人主人ID：",data["result"]["owner_id"],sep="")
+bot_id = data["result"]["id"]
 
 # 开始启动处理
 print("处理系统正在启动...")
@@ -241,7 +242,7 @@ while True:
             mention_replace()
             channel_replace()
             print(f"(#{username})",nickname,"说",mtext["text"])
-            pf.text_message(message_id,username,nickname,original_text,mtext["text"]) # 交给process_file.py处理
+            pf.text_message(message_id,username,nickname,original_text,mtext["text"],bot_id,channel_id,api_url,bot_token,headers_json) # 交给process_file.py处理
         elif mtext["type"] == "image": # 图片消息
             print(f"(#{username})",nickname,"发送图片",mtext["url"])
             pf.pic_message(message_id,username,nickname,mtext["url"]) # 交给process_file.py处理
