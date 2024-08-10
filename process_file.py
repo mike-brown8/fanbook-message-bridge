@@ -4,7 +4,6 @@ import os
 from pyexpat import model
 import requests as rq
 from promplate.llm.openai import ChatComplete # 引入GPT
-import csv
 import ini_db
 
 # 打开GPT数据库
