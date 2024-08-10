@@ -10,6 +10,7 @@ import re
 import configparser
 import os
 import process_file as pf
+import ini_db
 
 print("hello? World!")
 
@@ -201,7 +202,29 @@ def InputThread():
             chat_mode = True
         elif command_part == "114514": # 恶臭命令（整活）
             print("本程序正在恶臭：",doc.t114514)
+        elif command_part == "sblack": # 封GPT-短ID
+            try:
+                ini_db.set_black(int(text_input[command_end + 1:]),True)
+            except Exception as e:
+                print(e)
+        elif command_part == "rblack": # 解GPT-短ID
+            try:
+                ini_db.set_black(int(text_input[command_end + 1:]),False)
+            except Exception as e:
+                print(e)
+        elif command_part == "gtime": # 读GPT次数-短ID
+            try:
+                print(ini_db.read_time(int(text_input[command_end + 1:])))
+            except Exception as e:
+                print(e)
+        elif command_part == "stime": # 写GPT次数-短ID
+            try:
+                times_of_chat = int(text_input[text_input[command_end + 1:].find(" ")+7:])
+                ini_db.set_time(int(text_input[command_end + 1:text_input[command_end + 1:].find(" ") + 6]),times_of_chat)
+            except Exception as e:
+                print(e)
         elif command_part == "exit": # 退出程序命令
+            ini_db.db_save()
             exit_program = True
             quit()
         else:
@@ -242,7 +265,7 @@ while True:
             mention_replace()
             channel_replace()
             print(f"(#{username})",nickname,"说",mtext["text"])
-            pf.text_message(message_id,username,nickname,original_text,mtext["text"],bot_id,channel_id,api_url,bot_token,headers_json) # 交给process_file.py处理
+            pf.text_message(message_id,username,nickname,original_text,mtext["text"],bot_id,channel_id,api_url,bot_token,headers_json,guild_id) # 交给process_file.py处理
         elif mtext["type"] == "image": # 图片消息
             print(f"(#{username})",nickname,"发送图片",mtext["url"])
             pf.pic_message(message_id,username,nickname,mtext["url"]) # 交给process_file.py处理

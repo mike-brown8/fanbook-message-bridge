@@ -23,6 +23,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="doc_file.py" />
+    <Compile Include="ini_db.py" />
     <Compile Include="main.py" />
     <Compile Include="process_file.py" />
   </ItemGroup>
